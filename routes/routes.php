@@ -1,19 +1,23 @@
 <?php
 
+$this->get("/", "HomeController@index");
+
 $this->get("/login", "LoginController@index");
-
 $this->post("/login", "LoginController@login");
-$this->get("/home", "HomeController@index");
 
-
-$this->get("/apartamentos", "HomeController@listar");
-
-$this->get("/logout", "LoginController@logout");
+/**
+ * Usando um função na rota
+ */
 
 // $this->get("", function(){
 //     echo "função";
 //     exit;
 // });
+
+/**
+ * Adicionando novos arquivos de rotas
+ */
+
 // $this->loadRouteFile('admin');
 
 ?>
